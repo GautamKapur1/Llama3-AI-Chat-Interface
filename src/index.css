@@ -1,0 +1,99 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e3e4;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  width: 75%;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(1,1,1,1);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.messages {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+.user-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.llama-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.user-message-bubble {
+  background: #007aff;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+
+.llama-message-bubble {
+  background: #e2e3e4;
+  color: black;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+button {
+  margin: auto 10px auto 10px;
+  background: #007aff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.button-invalid {
+  maxgin: auto 10px auto 10px;
+  background: #8c9196;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: not-allowed;
+}
+
+.clear-chat-button {
+  background-color: red;
+}
